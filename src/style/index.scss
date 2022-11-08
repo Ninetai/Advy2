@@ -1,0 +1,241 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+// @import "../../node_modules/bootstrap/scss/bootstrap";
+// Then add additional custom code here
+// Define variable defaults
+@import "./oNboarding.scss";
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "node_modules/bootstrap-vue/node_modules/bootstrap/scss/bootstrap.scss";
+@import "node_modules/bootstrap-vue/src/index.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#app {
+  background-color: #f0f2fa;
+  display: flex;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  &:hover {
+    color: black !important;
+    text-decoration: none !important;
+  }
+}
+
+.cursor-point {
+  cursor: pointer;
+}
+
+.table {
+  border-radius: 16px;
+  th {
+    border-top: 0px;
+  }
+  td {
+    border-bottom: 0px;
+  }
+  th,
+  td {
+    padding: 1rem;
+    vertical-align: middle;
+    text-align: center;
+    color: #6c757d;
+  }
+}
+.border-b1 {
+  border-bottom: 1px solid #5a59594d !important;
+}
+.border-1 {
+  border: 1px solid #5a59594d;
+}
+.border-r16 {
+  border-radius: 16px;
+}
+
+.border-r12 {
+  border-radius: 12px;
+}
+
+.border-r10 {
+  border-radius: 10px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-17 {
+  font-size: 17px;
+}
+.p-12 {
+  padding: 12px;
+}
+.p-10 {
+  padding: 10px 10px 3px 10px;
+}
+.p-20 {
+  padding: 20px;
+}
+.pt-10 {
+  padding-top: 10px;
+}
+.color-gray {
+  color: darkgray;
+}
+
+.mt--5 {
+  margin-top: -5px;
+}
+.input-style {
+  width: 100%;
+  height: fit-content;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-radius: 16px;
+}
+
+.link {
+  color: #367bf2;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.link:hover {
+  transition: all 0.3s linear;
+  border-bottom: 2px solid #367bf278;
+}
+
+.icon-background {
+  background-color: white;
+  padding: 0.25rem;
+  border-radius: 50%;
+  width: 47px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.campaign-body {
+  overflow-y: hidden;
+}
+
+.calendar-icon {
+  position: absolute;
+  right: 18px;
+  top: 12px;
+}
+.back-button {
+  border-radius: 50%;
+  border: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+
+.search-icon {
+  position: absolute;
+  top: 11px;
+  left: 13px;
+  color: #bec2cd;
+}
+
+#create {
+  .modal-dialog {
+    max-width: 890px;
+    #create___BV_modal_content_ {
+      padding: 20px !important;
+      border-radius: 16px !important;
+    }
+
+    #create___BV_modal_header_ {
+      border: 0px;
+    }
+  }
+}
+#edit {
+  .modal-dialog {
+    max-width: 890px;
+    #edit___BV_modal_content_ {
+      padding: 20px !important;
+      border-radius: 16px !important;
+    }
+
+    #edit___BV_modal_header_ {
+      border: 0px;
+    }
+  }
+}
+
+#registerModal {
+  .modal-dialog {
+    @media (min-width: 576px) {
+      max-width: 560px;
+      margin: 1.75rem auto;
+    }
+    .modal-content {
+      border-radius: 16px;
+    }
+  }
+}
+
+#authModal {
+  .modal-dialog {
+    @media (min-width: 576px) {
+      max-width: 540px;
+      margin: 1.75rem auto;
+    }
+    .modal-content {
+      border-radius: 16px;
+    }
+  }
+}
+.header-red {
+  background: linear-gradient(90deg, #fe5d6d 0%, #ffa999 100%);
+}
+
+.header-blue {
+  background: linear-gradient(90deg, #367bf2 0%, #999dff 100%);
+}
+
+.loading {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  gap: 0.25rem;
+  z-index: 99;
+}
+
+.opacity-5 {
+  opacity: 0.5;
+}
+
+.w-40px {
+  width: 40px;
+  height: 40px;
+}
+
+#bloggerModal___BV_modal_body_ {
+  background: #faf9ff;
+  border-radius: 22px;
+  padding: 45px;
+}
+
+.dropdown {
+  .dropdown-toggle {
+    padding: 0;
+  }
+}
